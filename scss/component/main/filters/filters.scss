@@ -1,0 +1,139 @@
+.products__group{
+  display: grid;
+  grid-template-columns: 326px 1fr;
+  gap:56px;
+}
+
+.filter{
+  max-width: 100%;
+  border: 1px solid $color_grey;
+  border-radius: 4px;
+  &__title {
+		position: relative;
+    padding: 16px 0 16px 30px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $color_grey;
+    border-top: 1px solid $color_grey;
+    font-size: toRem(18);
+    text-align: left;
+    background-color: $color_white;
+    cursor: pointer;
+	}
+	&__title:before, &__title:after{
+		content: "";
+		width: 12px;;
+		height: 4px;
+		background-color: $color_black;
+		position: absolute;
+		top: 24px;
+	}
+	&__title:before{
+		transform: rotate(40deg);
+    right: 29px;
+	}
+	&__title:after{
+		transform: rotate(-40deg);
+    right: 22px;
+	}
+
+  &__input-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 24px 28px 34px 30px;
+  }
+
+  &__checkbox-group{
+    &.label-doublecol{
+      column-count: 2;
+    }
+  }
+  &__label{
+    display: block;
+    font-size: toRem(14);
+  }
+  &__input{
+    max-width: toRem(188);
+    padding: 10px 60px;
+    border: 1px solid $color_grey;
+    border-radius: 4px;
+  }
+
+  &__checkbox-group{
+    padding: 24px 120px 24px 30px;
+  }
+  
+}
+
+.product-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex:  1 1 50%;
+  gap: 40px;
+  .product-item{
+    position: relative;
+    max-width: 300px;
+    display: flex;
+    flex-basis: 300px;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid $color_grey;
+    border-radius: 4px;
+    height: fit-content;
+    &__body{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 14px;
+    }
+    &__media{
+      margin: 0 0 32px;
+    }
+    &__item-img{
+      height: 200px;
+      object-fit: contain;
+    }
+    &__like{
+      position: absolute;
+      top: 14px;
+      right: 16px;
+    }
+    &__title{
+      margin-bottom: 8px;
+      font-size: toRem(24);
+      line-height: toRem(28);
+    }
+    &__stock-status{
+      position: relative;
+      margin-bottom: 4px;
+      color: #767272;
+      font-size: toRem(14);
+      line-height: toRem(16);
+    }
+    &__price{
+      margin-bottom: 8px;
+      font-size: toRem(14);
+      line-height: toRem(16);
+      color: #767272;
+    }
+    &__footer{
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      gap: 60px;
+    }
+  }
+  
+}
+
+.svg-status{
+  position: absolute;
+  left: -22px;
+  top: -2px;
+}

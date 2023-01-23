@@ -1,0 +1,24 @@
+.products{
+  padding: 32px 0 48px;
+  &__finder{
+    margin: 0 0 32px;
+    .products{
+      &__form{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        margin: 0 0 32px;
+        &__input{
+          width: 100%;
+          padding: 20px 112px 20px 68px;
+          border: 1px solid lightgrey;
+          border-radius: 4px;
+          font-size: 18px;
+          &:focus{
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}
