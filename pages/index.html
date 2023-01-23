@@ -16,366 +16,117 @@
       <header class="header">
         <img
           src="../images/image_mo_logo.jpg"
-          class="header__logo"
-          alt="Mac Outlet logo"
+          alt=""
+          class="header__logo company-logo"
         />
-        <div class="header__cart-group">
-          <button class="header__cart-icon">
-            <svg
-              width="40"
-              height="40"
-              viewBox="0 0 40 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="20" cy="20" r="19.5" fill="white" stroke="#767272" />
-              <g clip-path="url(#clip0_10203_10)">
-                <path
-                  d="M29.8846 14.1786C29.7701 14.0145 29.5859 13.9131 29.3858 13.9045L16.9796 13.3698C16.6236 13.3542 16.3262 13.629 16.3109 13.9833C16.2958 14.3375 16.5702 14.6367 16.9244 14.6519L28.4907 15.1505L26.2165 22.2461H16.0962L14.2678 12.2907C14.2276 12.0725 14.0778 11.8904 13.8712 11.8094L10.8766 10.6329C10.5466 10.5037 10.1742 10.6658 10.0445 10.9955C9.91515 11.3253 10.0772 11.6979 10.4071 11.8276L13.0697 12.8736L14.9304 23.0038C14.9865 23.3083 15.2519 23.5295 15.5617 23.5295H15.8703L15.1655 25.4872C15.1065 25.6512 15.1308 25.8333 15.2312 25.9757C15.3315 26.1183 15.4945 26.203 15.6686 26.203H16.1629C15.8566 26.5439 15.6686 26.9928 15.6686 27.4864C15.6686 28.548 16.5324 29.4116 17.5937 29.4116C18.655 29.4116 19.5188 28.548 19.5188 27.4864C19.5188 26.9929 19.3308 26.5439 19.0245 26.203H23.2217C22.9153 26.5439 22.7273 26.9928 22.7273 27.4864C22.7273 28.548 23.5908 29.4116 24.6524 29.4116C25.714 29.4116 26.5775 28.548 26.5775 27.4864C26.5775 26.9929 26.3895 26.5439 26.0833 26.203H26.6845C26.9799 26.203 27.2192 25.9636 27.2192 25.6683C27.2192 25.3729 26.9798 25.1335 26.6845 25.1335H16.4295L17.0069 23.5293H26.6844C26.9635 23.5293 27.2104 23.349 27.2954 23.0835L29.9692 14.7413C30.0306 14.5509 29.9991 14.3428 29.8846 14.1786ZM17.5937 28.3423C17.1219 28.3423 16.7381 27.9585 16.7381 27.4867C16.7381 27.0148 17.1219 26.631 17.5937 26.631C18.0656 26.631 18.4493 27.0148 18.4493 27.4867C18.4493 27.9585 18.0656 28.3423 17.5937 28.3423ZM24.6524 28.3423C24.1805 28.3423 23.7968 27.9585 23.7968 27.4867C23.7968 27.0148 24.1805 26.631 24.6524 26.631C25.1243 26.631 25.508 27.0148 25.508 27.4867C25.508 27.9585 25.1243 28.3423 24.6524 28.3423Z"
-                  fill="#767272"
+        <div class="header__cart-wrapper">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="20" cy="20" r="19.5" fill="white" stroke="#767272" />
+            <g clip-path="url(#clip0_10203_10)">
+              <path
+                d="M29.8846 14.1786C29.7701 14.0145 29.5859 13.9131 29.3858 13.9045L16.9796 13.3698C16.6236 13.3542 16.3262 13.629 16.3109 13.9833C16.2958 14.3375 16.5702 14.6367 16.9244 14.6519L28.4907 15.1505L26.2165 22.2461H16.0962L14.2678 12.2907C14.2276 12.0725 14.0778 11.8904 13.8712 11.8094L10.8766 10.6329C10.5466 10.5037 10.1742 10.6658 10.0445 10.9955C9.91515 11.3253 10.0772 11.6979 10.4071 11.8276L13.0697 12.8736L14.9304 23.0038C14.9865 23.3083 15.2519 23.5295 15.5617 23.5295H15.8703L15.1655 25.4872C15.1065 25.6512 15.1308 25.8333 15.2312 25.9757C15.3315 26.1183 15.4945 26.203 15.6686 26.203H16.1629C15.8566 26.5439 15.6686 26.9928 15.6686 27.4864C15.6686 28.548 16.5324 29.4116 17.5937 29.4116C18.655 29.4116 19.5188 28.548 19.5188 27.4864C19.5188 26.9929 19.3308 26.5439 19.0245 26.203H23.2217C22.9153 26.5439 22.7273 26.9928 22.7273 27.4864C22.7273 28.548 23.5908 29.4116 24.6524 29.4116C25.714 29.4116 26.5775 28.548 26.5775 27.4864C26.5775 26.9929 26.3895 26.5439 26.0833 26.203H26.6845C26.9799 26.203 27.2192 25.9636 27.2192 25.6683C27.2192 25.3729 26.9798 25.1335 26.6845 25.1335H16.4295L17.0069 23.5293H26.6844C26.9635 23.5293 27.2104 23.349 27.2954 23.0835L29.9692 14.7413C30.0306 14.5509 29.9991 14.3428 29.8846 14.1786ZM17.5937 28.3423C17.1219 28.3423 16.7381 27.9585 16.7381 27.4867C16.7381 27.0148 17.1219 26.631 17.5937 26.631C18.0656 26.631 18.4493 27.0148 18.4493 27.4867C18.4493 27.9585 18.0656 28.3423 17.5937 28.3423ZM24.6524 28.3423C24.1805 28.3423 23.7968 27.9585 23.7968 27.4867C23.7968 27.0148 24.1805 26.631 24.6524 26.631C25.1243 26.631 25.508 27.0148 25.508 27.4867C25.508 27.9585 25.1243 28.3423 24.6524 28.3423Z"
+                fill="#767272"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_10203_10">
+                <rect
+                  width="20"
+                  height="20"
+                  fill="white"
+                  transform="translate(10 10)"
                 />
-              </g>
-              <defs>
-                <clipPath id="clip0_10203_10">
-                  <rect
-                    width="20"
-                    height="20"
-                    fill="white"
-                    transform="translate(10 10)"
-                  />
-                </clipPath>
-              </defs>
-            </svg>
-          </button>
-          <div class="header__cart__identifier">1</div>
+              </clipPath>
+            </defs>
+          </svg>
+          <div class="header__identificator">3</div>
         </div>
       </header>
       <main class="main">
-        <section class="carousel">
-          <ul class="carousel__wrapper">
-            <li class="carousel__item app-banner">
-              <h2 class="carousel__item__slogan">AirPods Pro</h2>
-              <button class="btn__add-item">Add to cart</button>
-            </li>
-            <li class="carousel__item watch-banner">
-              <p class="carousel__item__slogan">Apple Watch 4</p>
-              <button class="btn__add-item">Add to cart</button>
-            </li>
-            <li class="carousel__item mbpro-banner">
-              <p class="carousel__item__slogan">MacBook Pro 16</p>
-              <button class="btn__add-item">Add to cart</button>
-            </li>
-            <li class="carousel__item atv-banner">
-              <p class="carousel__item__slogan">Apple TV</p>
-              <button class="btn__add-item">Add to cart</button>
-            </li>
-            <li class="carousel__item iphone-banner">
-              <p class="carousel__item__slogan">?</p>
-              <button class="btn__add-item">Add to cart</button>
-            </li>
-            <li class="carousel__item apm-banner">
-              <p class="carousel__item__slogan">AirPods Max</p>
-              <button class="btn__add-item">Add to cart</button>
-            </li>
-            <li class="carousel__item ipp-banner">
-              <p class="carousel__item__slogan">iPad Pro 13"</p>
-              <button class="btn__add-item">Add to cart</button>
-            </li>
-          </ul>
-        </section>
-        <section class="products">
-          <section class="products__finder">
-            <form action="get" class="products__form">
-              <input
-                type="text"
-                name="finder"
-                class="products__form__input"
-                placeholder="Enter device name..."
+        <section class="finder">
+          <input
+            type="text"
+            id="finderInput"
+            class="finder__input"
+            name="find_dev_name"
+            placeholder="Enter device name..."
+          />
+          <button id="finderSearchIdBtn" class="finder__btn search-btn">
+            <svg
+              id="finderSearchID"
+              class="finder__icon icon-search"
+              viewBox="0 0 512.005 512.005"
+              height="24"
+              width="24"
+              xml:space="preserve"
+            >
+              <g>
+                <g>
+                  <path
+                    d="M505.749,475.587l-145.6-145.6c28.203-34.837,45.184-79.104,45.184-127.317c0-111.744-90.923-202.667-202.667-202.667
+S0,90.925,0,202.669s90.923,202.667,202.667,202.667c48.213,0,92.48-16.981,127.317-45.184l145.6,145.6
+c4.16,4.16,9.621,6.251,15.083,6.251s10.923-2.091,15.083-6.251C514.091,497.411,514.091,483.928,505.749,475.587z
+M202.667,362.669c-88.235,0-160-71.765-160-160s71.765-160,160-160s160,71.765,160,160S290.901,362.669,202.667,362.669z"
+                  />
+                </g>
+              </g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+            </svg>
+          </button>
+          <button id="finderSettingsIdBtn" class="finder__btn settings-btn">
+            <svg
+              id="finderSettingsID"
+              class="finder__icon"
+              enable-background="new 0 0 512 512"
+              height="24"
+              width="24"
+              viewBox="0 0 512 512"
+              fill="white"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m272.066 512h-32.133c-25.989 0-47.134-21.144-47.134-47.133v-10.871c-11.049-3.53-21.784-7.986-32.097-13.323l-7.704 7.704c-18.659 18.682-48.548 18.134-66.665-.007l-22.711-22.71c-18.149-18.129-18.671-48.008.006-66.665l7.698-7.698c-5.337-10.313-9.792-21.046-13.323-32.097h-10.87c-25.988 0-47.133-21.144-47.133-47.133v-32.134c0-25.989 21.145-47.133 47.134-47.133h10.87c3.531-11.05 7.986-21.784 13.323-32.097l-7.704-7.703c-18.666-18.646-18.151-48.528.006-66.665l22.713-22.712c18.159-18.184 48.041-18.638 66.664.006l7.697 7.697c10.313-5.336 21.048-9.792 32.097-13.323v-10.87c0-25.989 21.144-47.133 47.134-47.133h32.133c25.989 0 47.133 21.144 47.133 47.133v10.871c11.049 3.53 21.784 7.986 32.097 13.323l7.704-7.704c18.659-18.682 48.548-18.134 66.665.007l22.711 22.71c18.149 18.129 18.671 48.008-.006 66.665l-7.698 7.698c5.337 10.313 9.792 21.046 13.323 32.097h10.87c25.989 0 47.134 21.144 47.134 47.133v32.134c0 25.989-21.145 47.133-47.134 47.133h-10.87c-3.531 11.05-7.986 21.784-13.323 32.097l7.704 7.704c18.666 18.646 18.151 48.528-.006 66.665l-22.713 22.712c-18.159 18.184-48.041 18.638-66.664-.006l-7.697-7.697c-10.313 5.336-21.048 9.792-32.097 13.323v10.871c0 25.987-21.144 47.131-47.134 47.131zm-106.349-102.83c14.327 8.473 29.747 14.874 45.831 19.025 6.624 1.709 11.252 7.683 11.252 14.524v22.148c0 9.447 7.687 17.133 17.134 17.133h32.133c9.447 0 17.134-7.686 17.134-17.133v-22.148c0-6.841 4.628-12.815 11.252-14.524 16.084-4.151 31.504-10.552 45.831-19.025 5.895-3.486 13.4-2.538 18.243 2.305l15.688 15.689c6.764 6.772 17.626 6.615 24.224.007l22.727-22.726c6.582-6.574 6.802-17.438.006-24.225l-15.695-15.695c-4.842-4.842-5.79-12.348-2.305-18.242 8.473-14.326 14.873-29.746 19.024-45.831 1.71-6.624 7.684-11.251 14.524-11.251h22.147c9.447 0 17.134-7.686 17.134-17.133v-32.134c0-9.447-7.687-17.133-17.134-17.133h-22.147c-6.841 0-12.814-4.628-14.524-11.251-4.151-16.085-10.552-31.505-19.024-45.831-3.485-5.894-2.537-13.4 2.305-18.242l15.689-15.689c6.782-6.774 6.605-17.634.006-24.225l-22.725-22.725c-6.587-6.596-17.451-6.789-24.225-.006l-15.694 15.695c-4.842 4.843-12.35 5.791-18.243 2.305-14.327-8.473-29.747-14.874-45.831-19.025-6.624-1.709-11.252-7.683-11.252-14.524v-22.15c0-9.447-7.687-17.133-17.134-17.133h-32.133c-9.447 0-17.134 7.686-17.134 17.133v22.148c0 6.841-4.628 12.815-11.252 14.524-16.084 4.151-31.504 10.552-45.831 19.025-5.896 3.485-13.401 2.537-18.243-2.305l-15.688-15.689c-6.764-6.772-17.627-6.615-24.224-.007l-22.727 22.726c-6.582 6.574-6.802 17.437-.006 24.225l15.695 15.695c4.842 4.842 5.79 12.348 2.305 18.242-8.473 14.326-14.873 29.746-19.024 45.831-1.71 6.624-7.684 11.251-14.524 11.251h-22.148c-9.447.001-17.134 7.687-17.134 17.134v32.134c0 9.447 7.687 17.133 17.134 17.133h22.147c6.841 0 12.814 4.628 14.524 11.251 4.151 16.085 10.552 31.505 19.024 45.831 3.485 5.894 2.537 13.4-2.305 18.242l-15.689 15.689c-6.782 6.774-6.605 17.634-.006 24.225l22.725 22.725c6.587 6.596 17.451 6.789 24.225.006l15.694-15.695c3.568-3.567 10.991-6.594 18.244-2.304z"
               />
-              <button type="button" class="btn btn-search">
-                <svg
-                  width="20"
-                  height="21"
-                  viewBox="0 0 20 21"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clip-path="url(#clip0_4631_177)">
-                    <path
-                      d="M19.7556 19.4952L14.0682 13.8199C15.1699 12.462 15.8332 10.7365 15.8332 8.8572C15.8332 4.50155 12.2815 0.957474 7.91656 0.957474C3.55161 0.957474 0 4.50151 0 8.85716C0 13.2128 3.55165 16.7569 7.9166 16.7569C9.7999 16.7569 11.5291 16.095 12.8899 14.9957L18.5773 20.671C18.7398 20.8331 18.9531 20.9146 19.1665 20.9146C19.3798 20.9146 19.5932 20.8331 19.7557 20.671C20.0815 20.3459 20.0815 19.8203 19.7556 19.4952ZM7.9166 15.0938C4.46996 15.0938 1.66666 12.2965 1.66666 8.85716C1.66666 5.41786 4.46996 2.62054 7.9166 2.62054C11.3632 2.62054 14.1665 5.41786 14.1665 8.85716C14.1665 12.2965 11.3632 15.0938 7.9166 15.0938Z"
-                      fill="#585050"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_4631_177">
-                      <rect
-                        width="20"
-                        height="19.9574"
-                        fill="white"
-                        transform="translate(0 0.957352)"
-                      />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </button>
-              <button type="button" class="btn btn-filter">
-                <svg
-                  width="20"
-                  height="13"
-                  viewBox="0 0 20 13"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.68647 12.6695H11.8857V10.5906H7.68647V12.6695ZM0.337891 0.196167V2.27506H19.2342V0.196167H0.337891ZM3.48728 7.47229H16.0848V5.3934H3.48728V7.47229Z"
-                    fill="#FFFFFF"
-                  />
-                </svg>
-              </button>
-              <button type="button" class="btn btn-settings">
-                <svg
-                  id="Layer_1"
-                  enable-background="new 0 0 512 512"
-                  height="24"
-                  viewBox="0 0 512 512"
-                  width="24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="m272.066 512h-32.133c-25.989 0-47.134-21.144-47.134-47.133v-10.871c-11.049-3.53-21.784-7.986-32.097-13.323l-7.704 7.704c-18.659 18.682-48.548 18.134-66.665-.007l-22.711-22.71c-18.149-18.129-18.671-48.008.006-66.665l7.698-7.698c-5.337-10.313-9.792-21.046-13.323-32.097h-10.87c-25.988 0-47.133-21.144-47.133-47.133v-32.134c0-25.989 21.145-47.133 47.134-47.133h10.87c3.531-11.05 7.986-21.784 13.323-32.097l-7.704-7.703c-18.666-18.646-18.151-48.528.006-66.665l22.713-22.712c18.159-18.184 48.041-18.638 66.664.006l7.697 7.697c10.313-5.336 21.048-9.792 32.097-13.323v-10.87c0-25.989 21.144-47.133 47.134-47.133h32.133c25.989 0 47.133 21.144 47.133 47.133v10.871c11.049 3.53 21.784 7.986 32.097 13.323l7.704-7.704c18.659-18.682 48.548-18.134 66.665.007l22.711 22.71c18.149 18.129 18.671 48.008-.006 66.665l-7.698 7.698c5.337 10.313 9.792 21.046 13.323 32.097h10.87c25.989 0 47.134 21.144 47.134 47.133v32.134c0 25.989-21.145 47.133-47.134 47.133h-10.87c-3.531 11.05-7.986 21.784-13.323 32.097l7.704 7.704c18.666 18.646 18.151 48.528-.006 66.665l-22.713 22.712c-18.159 18.184-48.041 18.638-66.664-.006l-7.697-7.697c-10.313 5.336-21.048 9.792-32.097 13.323v10.871c0 25.987-21.144 47.131-47.134 47.131zm-106.349-102.83c14.327 8.473 29.747 14.874 45.831 19.025 6.624 1.709 11.252 7.683 11.252 14.524v22.148c0 9.447 7.687 17.133 17.134 17.133h32.133c9.447 0 17.134-7.686 17.134-17.133v-22.148c0-6.841 4.628-12.815 11.252-14.524 16.084-4.151 31.504-10.552 45.831-19.025 5.895-3.486 13.4-2.538 18.243 2.305l15.688 15.689c6.764 6.772 17.626 6.615 24.224.007l22.727-22.726c6.582-6.574 6.802-17.438.006-24.225l-15.695-15.695c-4.842-4.842-5.79-12.348-2.305-18.242 8.473-14.326 14.873-29.746 19.024-45.831 1.71-6.624 7.684-11.251 14.524-11.251h22.147c9.447 0 17.134-7.686 17.134-17.133v-32.134c0-9.447-7.687-17.133-17.134-17.133h-22.147c-6.841 0-12.814-4.628-14.524-11.251-4.151-16.085-10.552-31.505-19.024-45.831-3.485-5.894-2.537-13.4 2.305-18.242l15.689-15.689c6.782-6.774 6.605-17.634.006-24.225l-22.725-22.725c-6.587-6.596-17.451-6.789-24.225-.006l-15.694 15.695c-4.842 4.843-12.35 5.791-18.243 2.305-14.327-8.473-29.747-14.874-45.831-19.025-6.624-1.709-11.252-7.683-11.252-14.524v-22.15c0-9.447-7.687-17.133-17.134-17.133h-32.133c-9.447 0-17.134 7.686-17.134 17.133v22.148c0 6.841-4.628 12.815-11.252 14.524-16.084 4.151-31.504 10.552-45.831 19.025-5.896 3.485-13.401 2.537-18.243-2.305l-15.688-15.689c-6.764-6.772-17.627-6.615-24.224-.007l-22.727 22.726c-6.582 6.574-6.802 17.437-.006 24.225l15.695 15.695c4.842 4.842 5.79 12.348 2.305 18.242-8.473 14.326-14.873 29.746-19.024 45.831-1.71 6.624-7.684 11.251-14.524 11.251h-22.148c-9.447.001-17.134 7.687-17.134 17.134v32.134c0 9.447 7.687 17.133 17.134 17.133h22.147c6.841 0 12.814 4.628 14.524 11.251 4.151 16.085 10.552 31.505 19.024 45.831 3.485 5.894 2.537 13.4-2.305 18.242l-15.689 15.689c-6.782 6.774-6.605 17.634-.006 24.225l22.725 22.725c6.587 6.596 17.451 6.789 24.225.006l15.694-15.695c3.568-3.567 10.991-6.594 18.244-2.304z"
-                    fill="#FFFFFF"
-                  />
-                  <path
-                    d="m256 367.4c-61.427 0-111.4-49.974-111.4-111.4s49.973-111.4 111.4-111.4 111.4 49.974 111.4 111.4-49.973 111.4-111.4 111.4zm0-192.8c-44.885 0-81.4 36.516-81.4 81.4s36.516 81.4 81.4 81.4 81.4-36.516 81.4-81.4-36.515-81.4-81.4-81.4z"
-                    fill="#FFFFFF"
-                  />
-                </svg>
-              </button>
-            </form>
-          </section>
-          <section class="products__group">
-            <section class="filter">
-              <div class="filter__item">
-                <button class="filter__title">Price</button>
-                <div class="filter__group">
-                  <div class="filter__input-group">
-                    <label for="filterFrom" class="filter__label label__top">
-                      From </label
-                    ><input
-                      id="filterFrom"
-                      type="text"
-                      class="filter__input label__top"
-                    />
-                    <label for="filterTo" class="filter__label"> To </label
-                    ><input id="filterTo" type="text" class="filter__input" />
-                  </div>
-                </div>
-              </div>
-              <div class="filter__item">
-                <button class="filter__title">Color</button>
-                <div class="filter__checkbox-group label-doublecol">
-                  <label for="" class="filter__label"
-                    ><input type="checkbox" class="filter__checkbox-item" />
-                    Red</label
-                  >
-                  <label for="" class="filter__label"
-                    ><input
-                      type="checkbox"
-                      class="filter__checkbox-item"
-                    />Black</label
-                  >
-                  <label for="" class="filter__label"
-                    ><input
-                      type="checkbox"
-                      class="filter__checkbox-item"
-                    />blue</label
-                  >
-                  <label for="" class="filter__label"
-                    ><input
-                      type="checkbox"
-                      class="filter__checkbox-item"
-                    />Gold</label
-                  >
-                  <label for="" class="filter__label"
-                    ><input
-                      type="checkbox"
-                      class="filter__checkbox-item"
-                    />Green</label
-                  >
-                  <label for="" class="filter__label"
-                    ><input
-                      type="checkbox"
-                      class="filter__checkbox-item"
-                    />White</label
-                  >
-                  <label for="" class="filter__label">
-                    <input type="checkbox" class="filter__checkbox-item" />
-                    Grey</label
-                  >
-                  <label for="" class="filter__label"
-                    ><input
-                      type="checkbox"
-                      class="filter__checkbox-item"
-                    />Yellow</label
-                  >
-                </div>
-              </div>
-              <!-- Memory -->
-              <div class="filter__item">
-                <button class="filter__title">Memory</button>
-                <div class="filter__checkbox-group label-doublecol">
-                  <label for="" class="filter__label"
-                    ><input type="checkbox" class="filter__checkbox-item" />
-                    32Gb</label
-                  >
-                  <label for="" class="filter__label"
-                    ><input
-                      type="checkbox"
-                      class="filter__checkbox-item"
-                    />64Gb</label
-                  >
-                  <label for="" class="filter__label"
-                    ><input
-                      type="checkbox"
-                      class="filter__checkbox-item"
-                    />128Gb</label
-                  >
-                  <label for="" class="filter__label"
-                    ><input
-                      type="checkbox"
-                      class="filter__checkbox-item"
-                    />256Gb</label
-                  >
-                  <label for="" class="filter__label"
-                    ><input
-                      type="checkbox"
-                      class="filter__checkbox-item"
-                    />512Gb</label
-                  >
-                  <label for="" class="filter__label"
-                    ><input
-                      type="checkbox"
-                      class="filter__checkbox-item"
-                    />1Tb</label
-                  >
-                  <label for="" class="filter__label">
-                    <input type="checkbox" class="filter__checkbox-item" />
-                    2Tb</label
-                  >
-                  <label for="" class="filter__label"
-                    ><input
-                      type="checkbox"
-                      class="filter__checkbox-item"
-                    />4Tb</label
-                  >
-                </div>
-              </div>
-              <!-- OS -->
-              <div class="filter__item">
-                <button class="filter__title">OS</button>
-                <div class="filter__checkbox-group">
-                  <label for="" class="filter__label"
-                    ><input type="checkbox" class="filter__checkbox-item" />
-                    IOS</label
-                  >
-                  <label for="" class="filter__label"
-                    ><input
-                      type="checkbox"
-                      class="filter__checkbox-item"
-                    />MacOS</label
-                  >
-                  <label for="" class="filter__label"
-                    ><input
-                      type="checkbox"
-                      class="filter__checkbox-item"
-                    />tvOS</label
-                  >
-                  <label for="" class="filter__label"
-                    ><input
-                      type="checkbox"
-                      class="filter__checkbox-item"
-                    />256Gb</label
-                  >
-                </div>
-              </div>
-              <!-- Display -->
-              <div class="filter__item">
-                <button class="filter__title">Display</button>
-                <div class="filter__checkbox-group">
-                  <label for="" class="filter__label"
-                    ><input type="checkbox" class="filter__checkbox-item" /> 2 -
-                    5 inch</label
-                  >
-                  <label for="" class="filter__label"
-                    ><input type="checkbox" class="filter__checkbox-item" /> 5 -
-                    7 inch</label
-                  >
-                  <label for="" class="filter__label"
-                    ><input type="checkbox" class="filter__checkbox-item" /> 7 -
-                    12 inch</label
-                  >
-                  <label for="" class="filter__label"
-                    ><input type="checkbox" class="filter__checkbox-item" /> 12
-                    - 16 inch</label
-                  >
-                  <label for="" class="filter__label"
-                    ><input type="checkbox" class="filter__checkbox-item" /> +16
-                    inch</label
-                  >
-                </div>
-              </div>
-            </section>
-            <!-- list -->
-            <section class="product-list">
-              <div class="product-item">
-                <div class="product-item__body">
-                  <div class="product-item__media">
-                    <img
-                      src="../images/items/ipad-pro.jpeg"
-                      class="product-item__item-img"
-                      alt="iPad Pro"
-                    />
-                    <img
-                      src="../images/icons/like_empty.svg"
-                      class="product-item__like"
-                      alt="review icon"
-                    />
-                  </div>
-                  <h2 class="product-item__title">iPad PRO 13"</h2>
-                  <div class="product-item__stock-status">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="black"
-                      width="20px"
-                      height="20px"
-                      class="svg-status"
-                    >
-                      <path d="M0 0h24v24H0z" fill="none" />
-                      <path
-                        d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
-                      />
-                    </svg>
-                    <div class="product-item__stock-info">85 left in stock</div>
-                  </div>
-                  <div class="product-item__price">Price: 900 $</div>
-                  <button class="btn__add-item">Add to cart</button>
-                </div>
-                <div class="product-item__footer">
-                  <div class="product-item__review-wrapper">
-                    <div class="product-item__review-percentage">
-                      95% Positive reviews
-                    </div>
-                    <div>Above Average</div>
-                  </div>
-                  <div class="product-item__orders-wrapper">
-                    <div class="product-item__orders-num">1,327</div>
-                    <div>Orders</div>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </section>
+              <path
+                d="m256 367.4c-61.427 0-111.4-49.974-111.4-111.4s49.973-111.4 111.4-111.4 111.4 49.974 111.4 111.4-49.973 111.4-111.4 111.4zm0-192.8c-44.885 0-81.4 36.516-81.4 81.4s36.516 81.4 81.4 81.4 81.4-36.516 81.4-81.4-36.515-81.4-81.4-81.4z"
+              />
+            </svg>
+          </button>
+          <button id="finderFilterIdBtn" class="finder__btn filter-btn">
+            <svg
+              id="finderFilterID"
+              class="finder__icon icon-filter"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="white"
+              width="24px"
+              height="24px"
+            >
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z" />
+              -->
+            </svg>
+          </button>
         </section>
       </main>
     </div>

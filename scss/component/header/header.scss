@@ -1,35 +1,24 @@
 .header{
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: baseline;
-  padding: 12px 12px 16px;
+  padding: 12px 8px;
   &__logo{
-    display: block;
-    height: 26px;
+    height: 24px;
   }
-  &__cart-group{
+  &__cart-wrapper{
     position: relative;
   }
-  &__cart-icon{
-    padding: 0;
-    width: 40px;
-    height: 40px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-  &__cart__identifier{
+  &__identificator{
     position: absolute;
-    top: 24px;
-    right: 24px;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    padding: 4px;
-    font-size: 14px;
+    top:22px;
+    left: -8px;
+    padding: 4px 8px;
     text-align: center;
+    border-radius: 50%;
+    font-size: toRem(14);
     color: $color_white;
     background-color: $color_blue;
   }
 }
+//  <!-- style="enable-background: new 0 0 446.853 446.853" -->
+// viewBox="0 0 446.853 446.853"

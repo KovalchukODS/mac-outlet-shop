@@ -1,24 +1,39 @@
-.products{
-  padding: 32px 0 48px;
-  &__finder{
-    margin: 0 0 32px;
-    .products{
-      &__form{
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        margin: 0 0 32px;
-        &__input{
-          width: 100%;
-          padding: 20px 112px 20px 68px;
-          border: 1px solid lightgrey;
-          border-radius: 4px;
-          font-size: 18px;
-          &:focus{
-            outline: none;
-          }
-        }
-      }
+.finder{
+  position: relative;
+  margin: 0 0 20px;
+  &__btn{
+    position: absolute;
+    top: 12px;
+    padding: 8px 8px 6px;
+    border: none;
+    border-radius: 50%;
+    background-color: $color_blue;
+    cursor: pointer;
+    &.search-btn{
+      left: 18px;
+      background-color: transparent;
+    }
+    &.settings-btn{
+      right: 8px;
+    }
+    &.filter-btn{
+      right: 60px;
+    }
+  }
+ 
+
+    
+  
+  &__input{
+    display: block;
+    width: 100%;
+    padding: 20px 72px;
+    border: 1px solid $color_greycircle;
+    border-radius: 4px;
+    font-size: toRem(18);
+    line-height: toRem(21);
+    &:focus{
+      outline: none;
     }
   }
 }
