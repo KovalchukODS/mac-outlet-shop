@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
     <title>Mac Outlet</title>
-    <script src="../js/script.js" defer></script>
+    <script src="../js/items.js" defer></script>
     <script src="../js/script.js" defer></script>
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
@@ -127,6 +127,252 @@ M202.667,362.669c-88.235,0-160-71.765-160-160s71.765-160,160-160s160,71.765,160,
               -->
             </svg>
           </button>
+        </section>
+        <section class="section-group">
+          <section class="filter">
+            <!-- PRICE -->
+            <div class="filter__item">
+              <button class="filter__title">Price</button>
+              <div class="filter__group-wrapper">
+                <div class="filter__group">
+                  <label for="inputFromId" class="filter__label"> From </label>
+                  <input
+                    type="text"
+                    name="filterFrom"
+                    class="filter__input"
+                    id="inputFromId"
+                  />
+                </div>
+                <div class="filter__group">
+                  <label for="inputToId" class="filter__label"> To </label>
+                  <input
+                    type="text"
+                    name="filterTo"
+                    class="filter__input"
+                    id="inputToId"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- COLOR -->
+            <div class="filter__item">
+              <button class="filter__title">Color</button>
+              <div class="filter__group-wrapper__doulble-col">
+                <label for="filterColorRedId" class="filter__label">
+                  <input
+                    type="checkbox"
+                    name="filter_red"
+                    id="filterColorRedId"
+                  />
+                  Red
+                </label>
+                <label for="filterColorBlackId" class="filter__label">
+                  <input
+                    type="checkbox"
+                    name="filter_black"
+                    id="filterColorBlackId"
+                  />
+                  Black
+                </label>
+                <label for="filterColorBlueId" class="filter__label">
+                  <input
+                    type="checkbox"
+                    name="filter_blue"
+                    id="filterColorBlueId"
+                  />
+                  Blue
+                </label>
+                <label for="filterColorGoldId" class="filter__label">
+                  <input
+                    type="checkbox"
+                    name="filter_gold"
+                    id="filterColorGoldId"
+                  />
+                  Gold
+                </label>
+                <label for="filterColorGreenId" class="filter__label">
+                  <input
+                    type="checkbox"
+                    name="filter_green"
+                    id="filterColorGreenId"
+                  />
+                  Green
+                </label>
+                <label for="filterColorWhiteId" class="filter__label">
+                  <input
+                    type="checkbox"
+                    name="filter_white"
+                    id="filterColorWhiteId"
+                  />
+                  White
+                </label>
+                <label for="filterColorGreyId" class="filter__label">
+                  <input
+                    type="checkbox"
+                    name="filter_grey"
+                    id="filterColorGreyId"
+                  />
+                  Grey
+                </label>
+                <label for="filterColorYellowId" class="filter__label">
+                  <input
+                    type="checkbox"
+                    name="filter_yellow"
+                    id="filterColorYellowId"
+                  />
+                  Yellow
+                </label>
+              </div>
+            </div>
+            <!-- MEMORY -->
+            <div class="filter__item">
+              <button class="filter__title">Memory</button>
+              <div class="filter__group-wrapper__doulble-col">
+                <label for="filterMemory32Id" class="filter__label">
+                  <input
+                    type="checkbox"
+                    name="filter_32"
+                    id="filterMemory32Id"
+                  />
+                  32 Gb
+                </label>
+                <label for="filterMemory64Id" class="filter__label">
+                  <input
+                    type="checkbox"
+                    name="filter_64"
+                    id="filterMemory64Id"
+                  />
+                  64 Gb
+                </label>
+                <label for="filterMemory128Id" class="filter__label">
+                  <input
+                    type="checkbox"
+                    name="filter_128"
+                    id="filterMemory128Id"
+                  />
+                  128 Gb
+                </label>
+                <label for="filterMemory256Id" class="filter__label">
+                  <input
+                    type="checkbox"
+                    name="filter_256"
+                    id="filterMemory256Id"
+                  />
+                  256 Gb
+                </label>
+                <label for="filterMemory512Id" class="filter__label">
+                  <input
+                    type="checkbox"
+                    name="filter_512"
+                    id="filterMemory512Id"
+                  />
+                  512 Gb
+                </label>
+                <label for="filterMemory1024Id" class="filter__label">
+                  <input
+                    type="checkbox"
+                    name="filter_1024"
+                    id="filterMemory1024Id"
+                  />
+                  1 TB
+                </label>
+                <label for="filterMemory2048Id" class="filter__label">
+                  <input
+                    type="checkbox"
+                    name="filter_2048"
+                    id="filterMemory2048Id"
+                  />
+                  2 TB
+                </label>
+                <label for="filterMemory4096Id" class="filter__label">
+                  <input
+                    type="checkbox"
+                    name="filter_4096"
+                    id="filterMemory4096Id"
+                  />
+                  4 TB
+                </label>
+              </div>
+            </div>
+            <!-- OPERATIONAL SYSTEM -->
+            <div class="filter__item">
+              <button class="filter__title">OS</button>
+              <div class="filter__group-wrapper">
+                <label for="filterIOsId" class="filter__label">
+                  <input type="checkbox" name="filter_IOs" id="filterIOsId" />
+                  IOS
+                </label>
+                <label for="filterMacOsId" class="filter__label">
+                  <input
+                    type="checkbox"
+                    name="filter_MacOs"
+                    id="filterMacOsId"
+                  />
+                  Mac OS
+                </label>
+                <label for="filterTvOsId" class="filter__label">
+                  <input type="checkbox" name="filter_TvOs" id="filterTvOsId" />
+                  tvOS
+                </label>
+                <label for="filterWacthOsId" class="filter__label">
+                  <input
+                    type="checkbox"
+                    name="filter_WacthOs"
+                    id="filterWacthOsId"
+                  />
+                  Watch OS
+                </label>
+              </div>
+            </div>
+            <!-- DISPLAY -->
+            <div class="filter__item">
+              <button class="filter__title">Display</button>
+              <div class="filter__group-wrapper">
+                <label for="filter2-5inchId" class="filter__label">
+                  <input
+                    type="checkbox"
+                    name="filter_2-5inch"
+                    id="filter2-5inchId"
+                  />
+                  2 - 5 inch
+                </label>
+                <label for="filter5-7inchId" class="filter__label">
+                  <input
+                    type="checkbox"
+                    name="filter_5-7inch"
+                    id="filter5-7inchId"
+                  />
+                  5 - 7 inch
+                </label>
+                <label for="filter7-12inchId" class="filter__label">
+                  <input
+                    type="checkbox"
+                    name="filter_TvOs"
+                    id="filter7-12inchId"
+                  />
+                  7 - 12 inch
+                </label>
+                <label for="filter12-16inchId" class="filter__label">
+                  <input
+                    type="checkbox"
+                    name="filter_12-16inch"
+                    id="filter12-16inchId"
+                  />
+                  12 - 16 inch
+                </label>
+                <label for="filter16inchId" class="filter__label">
+                  <input
+                    type="checkbox"
+                    name="filter_16inch"
+                    id="filter16inchId"
+                  />
+                  +16 inch
+                </label>
+              </div>
+            </div>
+          </section>
+          <!-- CATALOG -->
+          <section class="catalog"></section>
         </section>
       </main>
     </div>
