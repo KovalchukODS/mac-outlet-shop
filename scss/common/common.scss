@@ -3,11 +3,9 @@
   margin: 0 auto;
   padding: 0 15px;
 }
-.hidden{
-  display: none;
-}
+
 .btn-add{
-  max-width: 150px;
+  width: 150px;
   color: $color_white;
   padding: 14px 26px;
   border: none;
@@ -15,15 +13,27 @@
   text-align: center;
   font-size: toRem(20);
   line-height: toRem(23);
+  background-color: $color_blue;
   cursor: pointer;
   &:hover{
     text-decoration: underline;
   }
 }
 
-.btn-active{
+
+.btn-active {
   background-color: $color_blue;
 }
+
 .btn-disabled{
-  background-color: $color_greycircle;
+  background-color: $color_lightgrey;
+}
+
+.red{
+  fill: red;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
 }
