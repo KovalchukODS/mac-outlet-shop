@@ -204,11 +204,19 @@ class RenderCards {
   }
   addModalFunctional() {
     const catalogItem = document.querySelectorAll(".catalog__item");
-    catalogItem.forEach((elem) =>
+    // const modals = document.querySelectorAll(".modal");
+    catalogItem.forEach((elem) => {
+      const modal = elem.querySelector(".modal");
       elem.addEventListener("click", (event) => {
-        event.currentTarget.lastElementChild.classList.toggle("hidden");
-      })
-    );
+        if (event.target == modal) {
+          console.log(modal);
+          console.log(event.target);
+          modal.classList.add("hidden");
+          return;
+        }
+        event.currentTarget.lastElementChild.classList.remove("hidden");
+      });
+    });
   }
 }
 
