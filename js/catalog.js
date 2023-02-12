@@ -8,6 +8,41 @@ class ItemOfCatalog {
   checkBtnIsDisabled() {
     return this.orderInfo.inStock <= 0 ? "btn-disabled" : "btn-active";
   }
+  checkIsNameIncluded(name) {
+    const nameInLowerCase = name.toLowerCase();
+    return this.name.toLowerCase().includes(nameInLowerCase);
+  }
+  checkIsColorsIncluded(colors) {
+    if (!colors.length) return true;
+    for (const color of colors) {
+      const isExist = this.color.includes(color);
+      if (!isExist) {
+        return true;
+      }
+    }
+    return false;
+  }
+  checkIsStorageIncluded(storages) {
+    if (!storages.length) return true;
+    for (const str of storages) {
+      if (this.storage === str) return true;
+    }
+    return false;
+  }
+  checkIsOSIncluded(opSyss) {
+    if (!opSyss.length) return true;
+    for (let opS of opSyss) {
+      if (this.os === opS) return true;
+    }
+    return false;
+  }
+  checkIsDisplayIncluded(displays) {
+    if (!displays.length) return true;
+    for (let disp of displays) {
+      if (this.display === disp) return true;
+    }
+    return false;
+  }
 }
 
 class ItemsModel {
@@ -15,9 +50,61 @@ class ItemsModel {
     this.itemsCollection = ITEMS.map((e) => new ItemOfCatalog(e));
   }
   findByName(name) {
+    const nameInLowerCase = name.toLowerCase();
     return this.itemsCollection.filter((item) =>
-      item.name.toLowerCase().includes(name.toLowerCase())
+      item.name.toLowerCase().includes(nameInLowerCase)
     );
+  }
+
+  filterItems(filter = {}) {
+    const {
+      name = "",
+      color = [],
+      storage = [],
+      os = [],
+      display = [],
+    } = filter;
+
+    return this.itemsCollection.filter((e) => {
+      const isNameIncluded = e.checkIsNameIncluded(name);
+      if (!isNameIncluded) return false;
+
+      const isColorIncluded = e.checkIsColorsIncluded(color);
+      if (!isColorIncluded) return false;
+
+      const isStorageIncluded = e.checkIsStorageIncluded(storage);
+      if (!isStorageIncluded) return false;
+
+      const isOSIncluded = e.checkIsOSIncluded(os);
+      if (!isOSIncluded) return false;
+
+      const isDisplayIncluded = e.checkIsDisplayIncluded(display);
+      if (!isDisplayIncluded) return false;
+
+      return true;
+    });
+  }
+  get availableColors() {
+    return this.itemsCollection
+      .reduce((acc, item) => [...acc, ...item.color], [])
+      .filter((e, i, arr) => arr.indexOf(e) === i);
+  }
+
+  get availableStorage() {
+    return this.itemsCollection
+      .map((el) => el.storage)
+      .filter((e, i, arr) => arr.indexOf(e) === i && e !== null);
+  }
+
+  get availableOS() {
+    return this.itemsCollection
+      .map((el) => el.os)
+      .filter((e, i, arr) => arr.indexOf(e) === i && e !== null);
+  }
+  get availableDisplay() {
+    return this.itemsCollection
+      .map((el) => el.display)
+      .filter((e, i, arr) => arr.indexOf(e) === i && e !== null);
   }
 }
 
@@ -25,8 +112,6 @@ class RenderCards {
   constructor(itemsModel) {
     this.cardsContainer = document.querySelector(".catalog");
     this.renderCards(itemsModel.itemsCollection);
-    this.renderCardsButtonsStates();
-    this.addModalFunctional();
   }
   static renderCard(item) {
     const cardElem = document.createElement("div");
@@ -179,11 +264,6 @@ class RenderCards {
 
     return cardElem;
   }
-  renderCards(items) {
-    this.cardsContainer.innerHTML = ` `;
-    const elements = items.map((item) => RenderCards.renderCard(item));
-    this.cardsContainer.append(...elements);
-  }
 
   renderCardsButtonsStates() {
     const btns = document.querySelectorAll(".btn-add");
@@ -204,19 +284,23 @@ class RenderCards {
   }
   addModalFunctional() {
     const catalogItem = document.querySelectorAll(".catalog__item");
-    // const modals = document.querySelectorAll(".modal");
     catalogItem.forEach((elem) => {
       const modal = elem.querySelector(".modal");
       elem.addEventListener("click", (event) => {
         if (event.target == modal) {
-          console.log(modal);
-          console.log(event.target);
           modal.classList.add("hidden");
           return;
         }
         event.currentTarget.lastElementChild.classList.remove("hidden");
       });
     });
+  }
+  renderCards(items) {
+    this.cardsContainer.innerHTML = ` `;
+    const elements = items.map((item) => RenderCards.renderCard(item));
+    this.cardsContainer.append(...elements);
+    this.renderCardsButtonsStates();
+    this.addModalFunctional();
   }
 }
 

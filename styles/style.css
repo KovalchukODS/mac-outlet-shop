@@ -124,7 +124,7 @@ input {
   left: 18px;
   background-color: transparent;
 }
-.finder__btn.settings-btn {
+.finder__btn.order-btn {
   right: 8px;
 }
 .finder__btn.filter-btn {
@@ -334,6 +334,7 @@ input {
 .modal__img {
   height: 250px;
   max-width: 250px;
+  object-fit: contain;
 }
 .modal__stats {
   padding: 36px 70px 92px;
