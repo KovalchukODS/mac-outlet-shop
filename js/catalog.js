@@ -262,6 +262,14 @@ class RenderCards {
         </div>
     </div>`;
 
+    const btnAddToCart = cardElem.querySelector(".btn-add");
+
+    btnAddToCart.addEventListener("click", (e) => {
+      cart.addToCart(item);
+      renderCart.renderCartList(cart.items);
+      e.stopPropagation();
+    });
+
     return cardElem;
   }
 
