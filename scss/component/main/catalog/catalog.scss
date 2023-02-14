@@ -1,0 +1,74 @@
+.catalog{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 640px;
+  gap: 40px;
+  &__item{
+    width: 300px;
+    border: 1px solid $color_lightgrey;
+    border-radius: 4px;
+  }
+}
+
+.item{
+  &__body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 16px 16px;
+  }
+  &__media{
+    position: relative;
+    margin: 0 0 32px;
+  }
+  &__img{
+    height: 200px;
+  }
+  &__title{
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-size: toRem(24);
+    line-height: toRem(28);
+  }
+  &__status-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 4px;
+    color: $color_greycircle;
+  }
+  &__price{
+    margin-bottom: 8px;
+    color: $color_lightgrey;
+  }
+  &__price-value{
+    color: $color_greycircle;
+  }
+  &__footer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 24px 28px 44px;
+    border-top: 1px solid $color_lightgrey;
+    font-size: toRem(14);
+    line-height: toRem(16);
+    background-color: #DAE2EA;
+  }
+  &__footere-icon{
+    position: absolute;
+    top: 20px;
+    left: 12px;
+  }
+
+}
+.btn-like{
+  position: absolute;
+  top: -24px;
+  right: -48px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

@@ -1,0 +1,93 @@
+.section-group{
+  display: flex;
+  justify-content: space-between;
+}  
+.filter{
+  width: 320px;
+  height: fit-content;
+  border: 1px solid $color_lightgrey;
+  &__title{
+    position: relative;
+    width: 100%;
+    padding: 14px 30px;
+    font-size: toRem(18);
+    line-height: toRem(21);
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid $color_lightgrey;
+    border-top: 1px solid $color_lightgrey;
+    background-color: transparent;
+    cursor: pointer;
+    &::before, &::after{
+      content: "";
+      width: 12px;;
+      height:4px;
+      background-color: $color_greycircle;
+      position: absolute;
+      top: 24px;
+      transition: all 0.3s ease 0s;
+    }
+    &::before{
+    right: 22px;
+		transform: rotate(40deg)
+	  }
+	  &::after{
+    right: 16px;
+		transform: rotate(-40deg)
+	  }
+    &.arr-top{
+      &::before{
+        transform: rotate(-40deg)
+        }
+        &::after{
+        transform: rotate(40deg)
+        }
+    }
+
+  }
+  &__group-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 32px 26px 32px 32px;
+    &__doulble-col{
+      padding: 32px 26px 32px 32px;
+      column-count: 2;
+      column-gap: 4px;
+      &.hidden{
+        display: none;
+      }
+    }
+    &.hidden{
+      display: none;
+    }
+  }
+  &__group{
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    &:last-child{
+      margin: 0;
+    }
+  }
+  &__label{
+    display: block;
+    margin-bottom: 12px;
+    font-size: toRem(14);
+    line-height: toRem(16);
+    cursor: pointer;
+    &:last-child{
+      margin: 0;
+    }
+  }
+  &__input{
+    display: block;
+    max-width: 188px;
+    padding: 12px 60px;
+    font-size: toRem(18);
+    line-height: toRem(21);
+    border: 1px solid $color_greycircle;
+    border-radius: 4px;
+  }
+}

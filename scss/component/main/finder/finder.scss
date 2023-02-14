@@ -1,0 +1,39 @@
+.finder{
+  position: relative;
+  margin: 0 0 20px;
+  &__btn{
+    position: absolute;
+    top: 12px;
+    padding: 8px 8px 6px;
+    border: none;
+    border-radius: 50%;
+    background-color: $color_blue;
+    cursor: pointer;
+    &.search-btn{
+      left: 18px;
+      background-color: transparent;
+    }
+    &.order-btn{
+      right: 8px;
+    }
+    &.filter-btn{
+      right: 60px;
+    }
+  }
+ 
+
+    
+  
+  &__input{
+    display: block;
+    width: 100%;
+    padding: 20px 72px;
+    border: 1px solid $color_greycircle;
+    border-radius: 4px;
+    font-size: toRem(18);
+    line-height: toRem(21);
+    &:focus{
+      outline: none;
+    }
+  }
+}
